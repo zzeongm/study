@@ -9,12 +9,16 @@ function charCount(str) {
   str = str.toLowerCase();
   for (let i = 0; i < str.length; i++) {
     let char = str[i];
-    if (result[char] > 0) {
-      result[char]++;
-    } else {
-      result[char] = 1;
+    if (/[a-z0-9]/.test(char)) {
+      if (result[char] > 0) {
+        result[char]++;
+      } else {
+        result[char] = 1;
+      }
     }
   }
   console.log(result);
   return result;
 }
+//요약
+//코드를 되돌아보고 리팩토링하고 다시 분석해보기!!
