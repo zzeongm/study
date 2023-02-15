@@ -1,6 +1,0 @@
-[현대 softeer] 내용
-[알고리즘] 내용
-[javascript]
-[react]
-[vue]
-[back-end]
