@@ -1,5 +1,7 @@
 import React from "react";
 import Hello from "./Hello";
+import logo from "./image/favicon.ico";
+import Wrapper from "./Wrapper"
 function App() {
   const name = "react";
   const style = {
@@ -9,10 +11,12 @@ function App() {
     padding: "1rem",
   };
   return (
-    <div>
-      <Hello />
+    <Wrapper>
+      <img src={logo} alt="logo" />
+      <Hello name="react" />
+      <Hello/>
       <div style={style}>{name}</div>
-    </div>
+    </Wrapper>
   );
 }
 
