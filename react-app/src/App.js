@@ -13,7 +13,7 @@ function App() {
   return (
     <Wrapper>
       <img src={logo} alt="logo" />
-      <Hello name="react" />
+      <Hello name="react" isSpecial={true}/>
       <Hello/>
       <div style={style}>{name}</div>
     </Wrapper>
