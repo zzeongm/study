@@ -1,16 +1,11 @@
 import React from "react";
 
 function Hello({ name, isSpecial }) {
-  return (
-    <div>
-      {isSpecial ? <b>*</b> : null}
-      {name}
-    </div>
-  );
+  return <div>{isSpecial ? <h1>{name}</h1> : null}</div>;
 }
 
 Hello.defaultProps = {
-  name: "이름없음",
+  name: "Vue",
 };
 
 export default Hello;
